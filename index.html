@@ -1,0 +1,334 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Travel Explorer</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <!-- AOS CSS (put in head) -->
+  <link href="https://unpkg.com/aos@2.3.4/dist/aos.css" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+   <style>
+    .font-playfair {
+      font-family: 'Playfair Display', serif;
+    }
+  </style>
+</head>
+<body class="m-0 overflow-x-hidden bg-black font-sans">
+
+<!-- Navbar -->
+<header class="bg-white shadow-md sticky top-0 z-50">
+  <div class="w-full py-4 flex items-center">
+    <h1 class="text-2xl font-bold text-blue-600 font-playfair">Travel Explorer</h1>
+
+    <!-- Desktop Menu -->
+    <nav class="hidden md:flex ml-auto gap-6 pr-4">
+      <a href="#home" class="text-gray-700 hover:text-blue-600 font-medium font-playfair">Home</a>
+      <a href="#about" class="text-gray-700 hover:text-blue-600 font-medium font-playfair">About</a>
+      <a href="#contact" class="text-gray-700 hover:text-blue-600 font-medium font-playfair">Contact</a>
+    </nav>
+
+    <!-- Mobile Menu Button (optional) -->
+    <button id="menu-btn" class="md:hidden ml-auto mr-4 text-gray-700 focus:outline-none">
+      <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+          d="M4 6h16M4 12h16M4 18h16" />
+      </svg>
+    </button>
+  </div>
+
+  <!-- Mobile Nav (optional) -->
+  <div id="mobile-menu" class="hidden md:hidden bg-white px-4 pb-4">
+    <a href="index.html" class="block py-2 text-gray-700 hover:text-blue-600">Home</a>
+    <a href="#" class="block py-2 text-gray-700 hover:text-blue-600">About</a>
+    <a href="#" class="block py-2 text-gray-700 hover:text-blue-600 ">Contact</a>
+  </div>
+</header>
+
+
+
+<!-- Hero Section -->
+<section class="relative h-96  flex items-center justify-center text-center text-white">
+  <!-- Background Image with Dark Overlay -->
+  <div class="absolute inset-0">
+    <img src="https://w0.peakpx.com/wallpaper/818/636/HD-wallpaper-lake-and-house-under-the-moonlight-reflection-moonlight-wildflowers-countryside-purple-serenity-art-peaceful-cottage-sky-quiet-landscape-evening-night-mountain-view-moon-house-beautiful.jpg" 
+         alt="Hero Background"
+         class="w-full h-full object-cover">
+    <div class="absolute inset-0 bg-black bg-opacity-60"></div>
+  </div>
+
+  <!-- Hero Content -->
+  <div class="relative z-10 max-w-2xl px-4">
+    <h1 class="text-4xl md:text-5xl font-bold mb-4 font-playfair">
+      Find your happy place.
+    </h1>
+    <p class="text-lg md:text-xl mb-8 text-gray-200 font-bold">
+      Book with inspiring views, hotel-grade amenities, dreamy beds, 
+      pristine cleaning, and 24/7 concierge service.
+    </p>
+
+    <!-- Search Bar -->
+    <a href="#destinations" class="flex items-center justify-center bg-black bg-opacity-80 rounded-2xl px-4 py-3 w-full md:w-2/3 mx-auto" >
+      <button class="text-white text-lg">Explore Now</button>
+    </a>
+  </div>
+</section>
+
+
+  <!-- Location Cards (4 Columns) -->
+  <section class="text-center" id="destinations">
+    <h3 class="text-3xl font-bold m-8 text-white font-playfair">Popular Destinations</h3>
+    <div class="grid sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-9">
+
+      <!-- Card 1 -->
+      <a href="beach.html" class="block bg-white rounded-lg shadow-md hover:shadow-xl overflow-hidden hover:scale-105 transition p-2 ">
+        <img src="https://images.unsplash.com/photo-1603477849227-705c424d1d80?fm=jpg&q=60&w=3000&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8dHJvcGljYWwlMjBiZWFjaHxlbnwwfHwwfHx8MA%3D%3D" alt="Beach" class="w-full h-68 object-cover rounded-lg">
+        <div class="p-4">
+          <h4 class="text-lg font-semibold text-gray-800">Beaches</h4>
+          <p class="text-gray-600 text-sm mt-2">Relax by the ocean and enjoy the waves.</p>
+        </div>
+      </a>
+
+      <!-- Card 2 -->
+      <a href="mountain.html" class="block bg-white rounded-lg shadow-md hover:shadow-xl overflow-hidden hover:scale-105 transition p-2">
+        <img src="https://media.istockphoto.com/id/1453838542/photo/last-light-on-mount-sneffels.jpg?s=612x612&w=0&k=20&c=IBOZYpAjhV5hFEL8yKYmY2ZCyCaGEOrXR5VZI13NMRI=" alt="Mountains" class="w-full h-68 object-cover rounded-lg">
+        <div class="p-4">
+          <h4 class="text-lg font-semibold text-gray-800">Mountains</h4>
+          <p class="text-gray-600 text-sm mt-2">Explore breathtaking mountain views.</p>
+        </div>
+      </a>
+
+      <!-- Card 3 -->
+      <a href="city.html" class="block bg-white rounded-lg shadow-md hover:shadow-xl overflow-hidden hover:scale-105 transition p-2">
+        <img src="https://i.natgeofe.com/n/838dbb82-a2b5-4675-a7c6-ff80b0a1f651/future-cities-shanghai-yanan-expressway.jpg" alt="City" class="w-full h-98 object-cover rounded-lg">
+        <div class="p-4">
+          <h4 class="text-lg font-semibold text-gray-800">Cities</h4>
+          <p class="text-gray-600 text-sm mt-2">Discover vibrant city life and culture.</p>
+        </div>
+      </a>
+
+      <!-- Card 4 -->
+      <a href="desert.html" class="block bg-white rounded-lg shadow-md hover:shadow-xl overflow-hidden hover:scale-105 transition p-2">
+        <img src="https://www.wanderlustmagazine.com/wp-content/uploads/2025/03/shorthand/55538/1EYJK7lTZ4/assets/1bNH9IjOse/shutterstock_1974720401-1-4096x2726.jpeg" alt="Desert" class="w-full h-68 object-cover rounded-lg">
+        <div class="p-4">
+          <h4 class="text-lg font-semibold text-gray-800">Deserts</h4>
+          <p class="text-gray-600 text-sm mt-2">Experience the beauty of vast deserts.</p>
+        </div>
+      </a>
+
+      <!-- Add more up to 12 -->
+      <a href="forest.html" class="block bg-white rounded-lg shadow-md hover:shadow-xl overflow-hidden hover:scale-105 transition p-2">
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR78uQ3RVjEsp24OPNDUHmZ5hWq4MY3dAXQYA&s" alt="Forest" class="w-full h-68 object-cover rounded-lg">
+        <div class="p-4">
+          <h4 class="text-lg font-semibold text-gray-800">Forests</h4>
+          <p class="text-gray-600 text-sm mt-2">Walk through lush green forests.</p>
+        </div>
+      </a>
+
+      <a href="nationalParks.html" class="block bg-white rounded-lg shadow-md hover:shadow-xl overflow-hidden hover:scale-105 transition p-2">
+        <img src="https://www.tigersafari.net/wp-content/uploads/2024/01/Bengal-tiger-walking-in-Kanha-National-Park.jpg" alt="Forest" class="w-full h-68 object-cover rounded-lg">
+        <div class="p-4">
+          <h4 class="text-lg font-semibold text-gray-800">National Parks</h4>
+          <p class="text-gray-600 text-sm mt-2">In every walk with nature, one receives far more than he seeks</p>
+        </div>
+      </a>
+
+      <a href="countryside.html" class="block bg-white rounded-lg shadow-md hover:shadow-xl overflow-hidden hover:scale-105 transition p-2">
+        <img src="https://media.istockphoto.com/id/1420469187/photo/grassington-in-the-yorkshire-dales.jpg?s=612x612&w=0&k=20&c=uYX48IAHzT2PAb_I8FwjpI9a7Y3EDr4UWaODdrSrOzQ=" alt="Countryside" class="w-full h-68 object-cover rounded-lg">
+        <div class="p-4">
+          <h4 class="text-lg font-semibold text-gray-800">Countryside</h4>
+          <p class="text-gray-600 text-sm mt-2">Enjoy fresh air in the countryside.</p>
+        </div>
+      </a>
+
+      <a href="waterfalls.html" class="block bg-white rounded-lg shadow-md hover:shadow-xl overflow-hidden hover:scale-105 transition p-2">
+        <img src="https://media.cntraveler.com/photos/571945e380cf3e034f974b7d/4:3/w_2048,h_1536,c_limit/waterfalls-Seljalandsfoss-GettyImages-457381095.jpg" alt="Waterfalls" class="w-full h-68 object-cover rounded-lg">
+        <div class="p-4">
+          <h4 class="text-lg font-semibold text-gray-800">Waterfalls</h4>
+          <p class="text-gray-600 text-sm mt-2">See majestic waterfalls worldwide.</p>
+        </div>
+      </a>
+ 
+      <a href="snow.html" class="block bg-white rounded-lg shadow-md hover:shadow-xl overflow-hidden hover:scale-105 transition p-2">
+        <img src="https://media.istockphoto.com/id/533292615/photo/alley-in-snowy-morning.jpg?s=612x612&w=0&k=20&c=LKQgMoqdgHP5PkelvEMdwXhCMG_M1XhGoFT27-Hjrk4=" alt="Snow" class="w-full h-68 object-cover rounded-lg">
+        <div class="p-4">
+          <h4 class="text-lg font-semibold text-gray-800">Snow</h4>
+          <p class="text-gray-600 text-sm mt-2">Play and ski in snowy destinations.</p>
+        </div>
+      </a>
+
+      <a href="temples.html" class="block bg-white rounded-lg shadow-md hover:shadow-xl overflow-hidden hover:scale-105 transition p-2">
+        <img src="https://www.shutterstock.com/image-photo/famous-indian-madhya-pradesh-tourist-600w-2473265029.jpg" alt="Temples" class="w-full h-68 object-cover rounded-lg">
+        <div class="p-4">
+          <h4 class="text-lg font-semibold text-gray-800">Temples</h4>
+          <p class="text-gray-600 text-sm mt-2">Visit ancient temples & heritage sites.</p>
+        </div>
+      </a>
+
+      <a href="history.html" class="block bg-white rounded-lg shadow-md hover:shadow-xl overflow-hidden hover:scale-105 transition p-2">
+        <img src="https://www.eurokidsindia.com/blog/wp-content/uploads/2023/10/ancient-indian-history.jpg" alt="Rivers" class="w-full h-68 object-cover rounded-lg">
+        <div class="p-4">
+          <h4 class="text-lg font-semibold text-gray-800">History</h4>
+          <p class="text-gray-600 text-sm mt-2"> Step into the past and explore the timeless beauty of historical monuments and ancient cities. </p>
+        </div>
+      </a>
+
+      <a href="caves.html" class="block bg-white rounded-lg shadow-md hover:shadow-xl overflow-hidden hover:scale-105 transition p-2">
+        <img src="https://static.toiimg.com/thumb/msid-107866426,width-748,height-499,resizemode=4,imgsize-219748/.jpg" alt="Caves" class="w-full h-68 object-cover rounded-lg">
+        <div class="p-4">
+          <h4 class="text-lg font-semibold text-gray-800">Caves</h4>
+          <p class="text-gray-600 text-sm mt-2">Explore mysterious caves and wonders.</p>
+        </div>
+      </a>
+
+    </div>
+  </section>
+
+
+  <!-- About Us Section -->
+<section id="about" class="bg-black py-20">
+  <div class="max-w-7xl mx-auto px-6 lg:px-12 text-center">
+    <!-- Heading -->
+    <h2 class="text-4xl md:text-5xl font-bold text-white mb-6 font-playfair" data-aos="fade-up">
+      About <span class="text-blue-600">Wander</span>
+    </h2>
+    <p class="text-lg text-white mb-16 max-w-3xl mx-auto leading-relaxed" data-aos="fade-up" data-aos-delay="150">
+      At <span class="font-semibold text-blue-600">Wander</span>, we believe traveling is not just about visiting places, 
+      it’s about experiencing cultures, creating memories, and finding your true self.  
+      Our mission is to make your journey smooth, exciting, and unforgettable. 🌍✈️
+    </p>
+
+    <!-- Facilities Cards -->
+    <div class="grid gap-10 md:grid-cols-3">
+      <!-- Card 1 -->
+      <div class="bg-white rounded-2xl shadow-md p-8   hover:shadow-[0_0_25px_rgba(255,255,255,0.9)] 
+            hover:scale-105 transition duration-300 ease-in-out overflow-hidden"
+           data-aos="zoom-in" data-aos-delay="200">
+        <div class="text-blue-600 text-5xl mb-4">🏨</div>
+        <h3 class="text-2xl font-semibold text-gray-800 mb-3 font-playfair">Best Stays</h3>
+        <p class="text-gray-600">We provide handpicked hotels & resorts with comfort, luxury, and safety for every traveler.</p>
+      </div>
+
+      <!-- Card 2 -->
+      <div class="bg-white rounded-2xl shadow-md p-8  hover:shadow-[0_0_25px_rgba(255,255,255,0.9)] 
+            hover:scale-105 transition duration-300 ease-in-out overflow-hidden "
+           data-aos="zoom-in" data-aos-delay="400">
+        <div class="text-blue-600 text-5xl mb-4">🚌</div>
+        <h3 class="text-2xl font-semibold text-gray-800 mb-3 font-playfair">Easy Transport</h3>
+        <p class="text-gray-600">From cabs to buses, we arrange hassle-free transport so you can just sit back & relax.</p>
+      </div>
+
+    <!-- Card 3 -->
+<div class="bg-white rounded-2xl shadow-md p-8 
+            hover:shadow-[0_0_25px_rgba(255,255,255,0.9)] 
+            hover:scale-105 transition duration-300 ease-in-out overflow-hidden"
+     data-aos="zoom-in" data-aos-delay="600">
+  <div class="text-blue-600 text-5xl mb-4">🎯</div>
+  <h3 class="text-2xl font-semibold text-gray-800 mb-3 font-playfair">Custom Tours</h3>
+  <p class="text-gray-600">
+    Personalized travel packages to suit your style, whether it's adventure, leisure, or culture.
+  </p>
+</div>
+
+</section>
+
+
+
+
+<!-- Contact Us Section -->
+<section id="contact" class="py-16 bg-black" data-aos="fade-up" data-aos-duration="1500">
+  <div class="max-w-6xl mx-auto px-6 shadow-[0_0_10px_rgba(255,255,255,0.5)] hover:shadow-[0_0_25px_rgba(255,255,255,0.9)] ">
+    <h2 class="text-3xl md:text-4xl font-bold text-center text-blue-600 mb-6 font-playfair" data-aos="fade-up" data-aos-duration="1500">
+      Contact Us
+    </h2>
+    <p class="text-lg text-white text-center mb-12 font-playfair" data-aos="fade-up" data-aos-duration="1800" >
+      Got questions or feedback? We'd love to hear from you. Fill out the form below!
+    </p>
+
+    <div class="max-w-3xl mx-auto bg-gray-50 p-8 rounded-2xl shadow-md" data-aos="zoom-in" data-aos-duration="2000">
+      <form action="#" method="POST" class="space-y-6">
+        <div data-aos="fade-up" data-aos-duration="1500">
+          <label for="name" class="block text-left text-gray-700 font-medium mb-2">Your Name</label>
+          <input type="text" id="name" name="name" placeholder="Enter your name"
+            class="w-full px-4 py-3 border border-solid border-gray-600 rounded-xl focus:ring-2 focus:ring-blue-500 focus:outline-none" required>
+        </div>
+        <div data-aos="fade-up" data-aos-duration="1800">
+          <label for="email" class="block text-left text-gray-700 font-medium mb-2">Your Email</label>
+          <input type="email" id="email" name="email" placeholder="Enter your email"
+            class="w-full px-4 py-3 border border-solid border-gray-600 rounded-xl focus:ring-2 focus:ring-blue-500 focus:outline-none" required>
+        </div>
+        <div data-aos="fade-up" data-aos-duration="2000">
+          <label for="message" class="block text-left text-gray-700 font-medium mb-2">Message</label>
+          <textarea id="message" name="message" rows="5" placeholder="Write your message..."
+            class="w-full px-4 py-3 border border-solid border-gray-600 rounded-xl focus:ring-2 focus:ring-blue-500 focus:outline-none" required></textarea>
+        </div>
+        <button type="submit"
+          class="w-full bg-blue-600 text-white font-semibold py-3 rounded-xl hover:bg-blue-700 transition"
+          data-aos="fade-up" data-aos-duration="2200">
+          Send Message
+        </button>
+      </form>
+    </div>
+  </div>
+</section>
+
+<!-- Footer -->
+<footer class="bg-gray-900 text-gray-300 py-10" data-aos="fade-up" data-aos-duration="2000">
+  <div class="max-w-7xl mx-auto px-6 lg:px-12 grid md:grid-cols-3 gap-8 text-center md:text-left">
+    
+    <!-- Brand -->
+    <div data-aos="fade-right" data-aos-duration="1800">
+      <h3 class="text-2xl font-bold text-white mb-4 font-playfair">🌍 Wander</h3>
+      <p class="text-gray-400">Your trusted travel partner for unforgettable journeys across the globe.</p>
+    </div>
+
+    <!-- Quick Links -->
+    <div data-aos="zoom-in" data-aos-duration="2000">
+      <h4 class="text-lg font-semibold text-white mb-4 font-playfair">Quick Links</h4>
+      <ul class="space-y-2">
+        <li><a href="#home" class="hover:text-blue-400">Home</a></li>
+        <li><a href="#about" class="hover:text-blue-400">About</a></li>
+        <li><a href="#contact" class="hover:text-blue-400">Contact</a></li>
+      </ul>
+    </div>
+
+    <!-- Social Media -->
+    <div data-aos="fade-left" data-aos-duration="1000">
+      <h4 class="text-lg font-semibold text-white mb-4 font-playfair">Follow Us</h4>
+      <div class="flex justify-center md:justify-start gap-4 text-xl">
+        <a href="#" class="hover:text-blue-400">🌐</a>
+        <a href="#" class="hover:text-blue-400">📘</a>
+        <a href="#" class="hover:text-blue-400">📸</a>
+        <a href="#" class="hover:text-blue-400">🐦</a>
+      </div>
+    </div>
+  </div>
+
+  <div class="text-center text-white mt-10 font-playfair text-sm border-t border-gray-700 pt-6" data-aos="fade-up" data-aos-duration="200">
+    © 2025 Wander. All Rights Reserved.
+  </div>
+</footer>
+
+
+
+
+  <script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
+  <script>
+    AOS.init({
+      duration: 1000, 
+      once: true,     
+      offset: 100,    
+    });
+
+  // Toggle Mobile Menu
+  const menuBtn = document.getElementById("menu-btn");
+  const mobileMenu = document.getElementById("mobile-menu");
+
+  menuBtn.addEventListener("click", () => {
+    mobileMenu.classList.toggle("hidden");
+  });
+</script>
+
+</body>
+</html>

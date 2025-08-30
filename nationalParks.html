@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>National Parks</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+   <style>
+    .font-playfair {
+      font-family: 'Playfair Display', serif;
+    }
+  </style>
+</head>
+<body class="bg-gray-50 font-sans">
+
+     <nav class="bg-white shadow p-4">
+    <div class="container mx-auto flex justify-between items-center">
+      <a href="index.html" class="text-2xl font-bold text-green-600">TravelX</a>
+      <a href="index.html" class="text-gray-700 hover:text-green-900 text-2xl font-playfair">Home</a>
+    </div>
+  </nav>
+    <section class="relative bg-cover bg-center h-72 hidden md:block" style="background-image: url('https://blog.thomascook.in/wp-content/uploads/2018/04/Kanha-National-Park-1024x576-e1523612233394.jpg');">
+    <div class="absolute inset-0 bg-black bg-opacity-50 flex items-center justify-center">
+      <h2 class="text-4xl md:text-5xl text-white font-bold">Discover the Majesty of National Parks</h2>
+    </div>
+  </section>
+
+
+  <!-- National Parks Destinations -->
+  <section id="destinations" class="py-16 px-6  mx-auto">
+    <h2 class="text-3xl font-bold text-center mb-10 text-green-900">Top National Parks</h2>
+    <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
+
+      <!-- Yellowstone -->
+      <div class="bg-white rounded-xl shadow-lg overflow-hidden hover:scale-105 transform transition text-center">
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQkR5jMpWHwDy1U3_jaYxrKoJ2NSAPRruDAnA&s" alt="Yellowstone" class="w-full h-56 object-cover">
+        <div class="p-5">
+          <h3 class="text-xl font-semibold text-green-800">Yellowstone, USA</h3>
+          <p class="text-gray-600 mt-2">Home to geysers, hot springs, waterfalls, and roaming wildlife.</p>
+          <button class="mt-4 bg-green-800 text-white px-4 py-2 rounded-lg hover:bg-green-900">Book Now</button>
+        </div>
+      </div>
+
+      <!-- Banff -->
+      <div class="bg-white rounded-xl shadow-lg overflow-hidden hover:scale-105 transform transition text-center">
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQIS302cAif9HK1WYvm7MPeE-qj0Wj5LkXctg&s" alt="Banff" class="w-full h-56 object-cover">
+        <div class="p-5">
+          <h3 class="text-xl font-semibold text-green-800">Banff, Canada</h3>
+          <p class="text-gray-600 mt-2">Turquoise lakes, towering peaks, and stunning alpine scenery.</p>
+          <button class="mt-4 bg-green-800 text-white px-4 py-2 rounded-lg hover:bg-green-900">Book Now</button>
+        </div>
+      </div>
+
+      <!-- Serengeti -->
+      <div class="bg-white rounded-xl shadow-lg overflow-hidden hover:scale-105 transform transition text-center">
+        <img src="https://www.tanzania-experience.com/wp-content/uploads/2024/01/serengeti-national-park.jpg" alt="Serengeti" class="w-full h-56 object-cover">
+        <div class="p-5">
+          <h3 class="text-xl font-semibold text-green-800">Serengeti, Tanzania</h3>
+          <p class="text-gray-600 mt-2">Witness the Great Migration and Africa’s incredible wildlife.</p>
+          <button class="mt-4 bg-green-800 text-white px-4 py-2 rounded-lg hover:bg-green-900">Book Now</button>
+        </div>
+      </div>
+
+      <!-- Yosemite -->
+      <div class="bg-white rounded-xl shadow-lg overflow-hidden hover:scale-105 transform transition text-center">
+        <img src="https://i.natgeofe.com/n/f14f6c30-8d11-4e33-a5e9-05f1b50bdde3/yosemite-national-park-california.jpg" alt="Yosemite" class="w-full h-56 object-cover">
+        <div class="p-5">
+          <h3 class="text-xl font-semibold text-green-800">Yosemite, USA</h3>
+          <p class="text-gray-600 mt-2">Famous for granite cliffs, waterfalls, and giant sequoia trees.</p>
+          <button class="mt-4 bg-green-800 text-white px-4 py-2 rounded-lg hover:bg-green-900">Book Now</button>
+        </div>
+      </div>
+
+      <!-- Kruger -->
+      <div class="bg-white rounded-xl shadow-lg overflow-hidden hover:scale-105 transform transition text-center">
+        <img src="https://www.outlooktravelmag.com/media/Limpopo-KRUGER-NATIONAL-PARK-IN-FOCUS-Main.webp" alt="Kruger" class="w-full h-56 object-cover">
+        <div class="p-5">
+          <h3 class="text-xl font-semibold text-green-800">Kruger, South Africa</h3>
+          <p class="text-gray-600 mt-2">One of Africa’s largest reserves, home to the Big Five animals.</p>
+          <button class="mt-4 bg-green-800 text-white px-4 py-2 rounded-lg hover:bg-green-900">Book Now</button>
+        </div>
+      </div>
+
+      <!-- Plitvice -->
+      <div class="bg-white rounded-xl shadow-lg overflow-hidden hover:scale-105 transform transition text-center">
+        <img src="https://images.squarespace-cdn.com/content/v1/665604881782aa23525c3d06/1717529439558-9PMQ9X9NQN5MYEJ8NVQU/image-asset.jpeg" alt="Plitvice" class="w-full h-56 object-cover">
+        <div class="p-5">
+          <h3 class="text-xl font-semibold text-green-800">Plitvice Lakes, Croatia</h3>
+          <p class="text-gray-600 mt-2">Waterfalls, turquoise lakes, and lush green forests to explore.</p>
+          <button class="mt-4 bg-green-800 text-white px-4 py-2 rounded-lg hover:bg-green-900">Book Now</button>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+</body>
+</html>

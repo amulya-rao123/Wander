@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Beaches - TravelX</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+   <style>
+    .font-playfair {
+      font-family: 'Playfair Display', serif;
+    }
+  </style>
+</head>
+<body class="bg-gray-100">
+
+  <!-- Navbar -->
+  <nav class="bg-white shadow p-4">
+    <div class="container mx-auto flex justify-between items-center">
+      <a href="index.html" class="text-2xl font-bold text-blue-600">TravelX</a>
+      <a href="index.html" class="text-gray-700 hover:text-blue-500 text-2xl font-playfair">Home</a>
+    </div>
+  </nav>
+
+  <!-- Header -->
+   <section class="relative bg-cover bg-center h-72 hidden md:block" style="background-image: url('https://www.iroamly.com/images/best-beaches-in-the-us-cover.webp');">
+    <div class="absolute inset-0 bg-black bg-opacity-50 flex items-center justify-center">
+      <h2 class="text-4xl md:text-5xl text-white font-bold">Explore Beaches</h2>
+    </div>
+  </section>
+
+  <!-- Cards -->
+  <section class="container mx-auto py-10 grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6">
+    
+    <div class="bg-white shadow rounded-lg overflow-hidden hover:scale-105 transition text-center ">
+      <img src="https://media.istockphoto.com/id/535168027/photo/india-goa-palolem-beach.jpg?s=612x612&w=0&k=20&c=iGV1Ue0Efj87dQirWnUpZVG1dNobUjfVvMGdKHTJ7Qg=" class="w-full h-48 object-cover" alt="Goa Beach">
+      <div class="p-4">
+        <h2 class="text-xl font-bold">Goa Beach</h2>
+        <p class="text-gray-600">Golden sands & nightlife</p>
+        <button class="mt-2 bg-blue-500 text-white px-3 py-1 rounded hover:bg-blue-600">Book Now</button>
+      </div>
+    </div>
+
+    <div class="bg-white shadow rounded-lg overflow-hidden text-center hover:scale-105 transition">
+      <img src="https://images.unsplash.com/photo-1573843981267-be1999ff37cd?fm=jpg&q=60&w=3000&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8bWFsZGl2ZXN8ZW58MHx8MHx8fDA%3D" class="w-full h-48 object-cover" alt="Maldives">
+      <div class="p-4">
+        <h2 class="text-xl font-bold">Maldives</h2>
+        <p class="text-gray-600">Crystal clear waters</p>
+        <button class="mt-2 bg-blue-500 text-white px-3 py-1 rounded hover:bg-blue-600">Book Now</button>
+      </div>
+    </div>
+
+    <div class="bg-white shadow rounded-lg overflow-hidden text-center hover:scale-105 transition">
+      <img src="https://images.unsplash.com/photo-1604999333679-b86d54738315?fm=jpg&q=60&w=3000&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8N3x8YmFsaXxlbnwwfHwwfHx8MA%3D%3D" class="w-full h-48 object-cover" alt="Bali">
+      <div class="p-4">
+        <h2 class="text-xl font-bold">Bali</h2>
+        <p class="text-gray-600">Surfing & yoga paradise</p>
+        <button class="mt-2 bg-blue-500 text-white px-3 py-1 rounded hover:bg-blue-600">Book Now</button>
+      </div>
+    </div>
+
+     <div class="bg-white rounded-2xl shadow-lg hover:shadow-2xl transition p-6 text-center hover:scale-105 transition">
+        <img src="https://hips.hearstapps.com/hmg-prod/images/waikiki-afternoon-royalty-free-image-1721793023.jpg?crop=0.903xw:1.00xh;0.0408xw,0&resize=980:*" alt="Hawaii" class="rounded-xl mb-4 w-full h-48 object-cover">
+        <h3 class="text-xl font-semibold text-gray-800 mb-2">Hawaii, USA</h3>
+        <p class="text-gray-600">Tropical paradise with active volcanoes, hula culture, and world-class surfing.</p>
+        <button class="mt-2 bg-blue-500 text-white px-3 py-1 rounded hover:bg-blue-600">Book Now</button>
+      </div>
+
+      <!-- Beach 5 -->
+      <div class="bg-white rounded-2xl shadow-lg hover:shadow-2xl transition p-6 text-center hover:scale-105 transition">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/7/79/Bondi_from_above.jpg" alt="Bondi Beach" class="rounded-xl mb-4 w-full h-48 object-cover">
+        <h3 class="text-xl font-semibold text-gray-800 mb-2">Bondi Beach, Sydney</h3>
+        <p class="text-gray-600">One of the most iconic beaches in Australia, popular for surfing and beach walks.</p>
+        <button class="mt-2 bg-blue-500 text-white px-3 py-1 rounded hover:bg-blue-600">Book Now</button>
+      </div>
+
+      <!-- Beach 6 -->
+      <div class="bg-white rounded-2xl shadow-lg hover:shadow-2xl transition p-6 text-center hover:scale-105 transition">
+        <img src="https://www.andamandaphuket.com/sites/andamanda/files/inline-images/admd%20phuket.jpg" alt="Phuket" class="rounded-xl mb-4 w-full h-48 object-cover">
+        <h3 class="text-xl font-semibold text-gray-800 mb-2">Phuket, Thailand</h3>
+        <p class="text-gray-600">Beautiful white sand beaches, vibrant nightlife, and stunning island views.</p>
+        <button class="mt-2 bg-blue-500 text-white px-3 py-1 rounded hover:bg-blue-600">Book Now</button>
+      </div>
+
+  </section>
+
+</body>
+</html>

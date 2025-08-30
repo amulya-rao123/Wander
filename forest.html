@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Beaches - TravelX</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+   <style>
+    .font-playfair {
+      font-family: 'Playfair Display', serif;
+    }
+  </style>
+</head>
+<body class="bg-gray-100">
+
+  <!-- Navbar -->
+  <nav class="bg-white shadow p-4">
+    <div class="container mx-auto flex justify-between items-center">
+      <a href="index.html" class="text-2xl font-bold text-green-600">TravelX</a>
+      <a href="index.html" class="text-gray-700 hover:text-blue-500 text-2xl font-playfair">Home</a>
+    </div>
+  </nav>
+
+    <section class="relative bg-cover bg-center h-72 hidden md:block" style="background-image: url('https://res.cloudinary.com/enchanting/q_70,f_auto,w_4265,h_2341,c_fit/exodus-web/2019/03/Sipoonkorpi-National-Park_AdobeStock_464550231.jpeg');">
+    <div class="absolute inset-0 bg-black bg-opacity-50 flex items-center justify-center">
+      <h2 class="text-4xl md:text-5xl text-white font-bold">Discover the world's most enchanting green escapes</h2>
+    </div>
+  </section>
+
+
+<!-- Cards -->
+<section class="container mx-auto py-10 grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6">
+
+  <!-- Amazon Rainforest -->
+  <div class="bg-white shadow rounded-lg overflow-hidden hover:scale-105 transition text-center">
+    <img src="https://onetreeplanted.org/cdn/shop/articles/amazon-rainforest-facts_751x.jpg?v=1631742424" 
+         class="w-full h-48 object-cover" alt="Amazon Rainforest">
+    <div class="p-4">
+      <h2 class="text-xl font-bold text-green-800">Amazon Rainforest</h2>
+      <p class="text-gray-600">The largest rainforest on Earth, rich in biodiversity and vibrant culture.</p>
+      <button class="mt-2 bg-green-700 text-white px-3 py-1 rounded hover:bg-green-900">Book Now</button>
+    </div>
+  </div>
+
+  <!-- Black Forest, Germany -->
+  <div class="bg-white shadow rounded-lg overflow-hidden text-center hover:scale-105 transition">
+    <img src="https://cdn.britannica.com/40/83440-050-E7404870/Farm-buildings-region-Black-Forest-Ger-Baden-Wurttemberg.jpg" 
+         class="w-full h-48 object-cover" alt="Black Forest">
+    <div class="p-4">
+      <h2 class="text-xl font-bold text-green-800">Black Forest, Germany</h2>
+      <p class="text-gray-600">Dense woodlands, fairy-tale villages, and famous cuckoo clocks.</p>
+      <button class="mt-2 bg-green-700 text-white px-3 py-1 rounded hover:bg-green-900">Book Now</button>
+    </div>
+  </div>
+
+  <!-- Daintree Rainforest -->
+  <div class="bg-white shadow rounded-lg overflow-hidden text-center hover:scale-105 transition">
+    <img src="https://daintreeferry.com.au/wp-content/uploads/2021/09/daintree-rainforest-mt-alexandra-lookout-ttnq.jpg" 
+         class="w-full h-48 object-cover" alt="Daintree Rainforest">
+    <div class="p-4">
+      <h2 class="text-xl font-bold text-green-800">Daintree Rainforest, Australia</h2>
+      <p class="text-gray-600">One of the oldest rainforests, home to unique wildlife and lush greenery.</p>
+      <button class="mt-2 bg-green-700 text-white px-3 py-1 rounded hover:bg-green-900">Book Now</button>
+    </div>
+  </div>
+
+  <!-- Redwood Forest -->
+  <div class="bg-white rounded-2xl shadow-lg hover:shadow-2xl transition p-6 text-center hover:scale-105">
+    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/d/de/Redwood_National_Park%2C_fog_in_the_forest.jpg/1200px-Redwood_National_Park%2C_fog_in_the_forest.jpg" 
+         alt="Redwood Forest" class="rounded-xl mb-4 w-full h-48 object-cover">
+    <h3 class="text-xl font-semibold text-green-800 mb-2">Redwood Forest, USA</h3>
+    <p class="text-gray-600">Home to the tallest trees on Earth, a breathtaking natural wonder.</p>
+    <button class="mt-2 bg-green-700 text-white px-3 py-1 rounded hover:bg-green-900">Book Now</button>
+  </div>
+
+  <!-- Borneo Rainforest -->
+  <div class="bg-white rounded-2xl shadow-lg hover:shadow-2xl transition p-6 text-center hover:scale-105">
+    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRvFBEdyvhuyhQ8IcqxhjxeXIHA_hCCDMkvrw&s" 
+         alt="Borneo Rainforest" class="rounded-xl mb-4 w-full h-48 object-cover">
+    <h3 class="text-xl font-semibold text-green-800 mb-2">Borneo Rainforest</h3>
+    <p class="text-gray-600">A sanctuary for orangutans and rare species, rich in flora and fauna.</p>
+    <button class="mt-2 bg-green-700 text-white px-3 py-1 rounded hover:bg-green-900">Book Now</button>
+  </div>
+
+  <!-- Congo Rainforest -->
+  <div class="bg-white rounded-2xl shadow-lg hover:shadow-2xl transition p-6 text-center hover:scale-105">
+    <img src="https://kids.earth.org/wp-content/uploads/2024/02/Untitled-683-x-1024-px-87.jpg" 
+         alt="Congo Rainforest" class="rounded-xl mb-4 w-full h-48 object-cover">
+    <h3 class="text-xl font-semibold text-green-800 mb-2">Congo Rainforest</h3>
+    <p class="text-gray-600">The second largest rainforest, vital for biodiversity and the planet’s health.</p>
+    <button class="mt-2 bg-green-700 text-white px-3 py-1 rounded hover:bg-green-900">Book Now</button>
+  </div>
+
+</section>
+
+
+
+</body>
+</html>
